@@ -1,7 +1,26 @@
 # Weblog
 
-A sample blog like application using Angular 6, Bootstrap 4 & Google Firebase.
+A simple blog application using Angular 6, Typescript, Bootstrap 4 & Google Firebase for authentication and storage.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+Currently it supports registration, login and an inital dashboard functionalites.
+More functionalities will be added soon.
+
+## Firebase setup
+After setting up your dev environment, you are going to create a free Firebase account. To do this, visit the page https://firebase.google.com/ and Log in to your account (or create a new one).
+
+Click on the Add Firebase to your web app button and a pop up with your app credentials will be shown. 
+
+The pop up will have the following information about your new Firebase App. Copy this information to environment.ts file located in src/environments/environment.ts as shown below:
+export const environment = {
+  firebase: {
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_AUTH_DOMAIN",
+    databaseURL: "YOUR_DATABASE_URL",
+    projectId: "YOUR_PROJECT_ID",
+    storageBucket: "YOUR_STORAGE_BUCKET",
+    messagingSenderId: "YOUR_SENDER_ID"
+  }
+};
 
 ## Development server
 
