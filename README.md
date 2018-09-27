@@ -11,6 +11,7 @@ After setting up your dev environment, you are going to create a free Firebase a
 Click on the Add Firebase to your web app button and a pop up with your app credentials will be shown. 
 
 The pop up will have the following information about your new Firebase App. Copy this information to environment.ts file located in src/environments/environment.ts as shown below:
+
 export const environment = {
   firebase: {
     apiKey: "YOUR_API_KEY",
