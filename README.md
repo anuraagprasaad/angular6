@@ -1,5 +1,6 @@
 # Weblog
 
+A sample blog like application using Angular 6, Bootstrap 4 & Google Firebase.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
 
 ## Development server
