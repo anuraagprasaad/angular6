@@ -15,6 +15,9 @@ import { AppRoutesModule } from './app-routes.module';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { AuthService } from './services/auth.service';
+import { AddUserComponent } from './components/add-user/add-user.component';
+import { UserService } from './services/user.service';
+import { UsersComponent } from './components/users/users.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { AuthService } from './services/auth.service';
     NavbarComponent,
     DashboardComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    AddUserComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +38,7 @@ import { AuthService } from './services/auth.service';
     AngularFirestoreModule,
     AngularFireAuthModule
   ],
-  providers: [AuthService],
+  providers: [AuthService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

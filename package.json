@@ -25,11 +25,7 @@
     "bootstrap": "^4.1.3",
     "core-js": "^2.5.4",
     "firebase": "^5.5.1",
-<<<<<<< HEAD
     "font-awesome": "~5.3.1",
-=======
-    "font-awesome": "^4.7.0",
->>>>>>> 28e22618ec09990265dbc40b12fc5d983f2f9010
     "jquery": "^3.3.1",
     "npm": "^6.4.1",
     "popper.js": "^1.14.4",
