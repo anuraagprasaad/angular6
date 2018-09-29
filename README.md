@@ -1,6 +1,5 @@
 # Weblog
 
-<<<<<<< HEAD
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
 =======
 A simple blog application using Angular 6, Typescript, Bootstrap 4 & Google Firebase for authentication and storage.
@@ -25,17 +24,14 @@ export const environment = {
     messagingSenderId: "YOUR_SENDER_ID"
   }
 };
->>>>>>> 28e22618ec09990265dbc40b12fc5d983f2f9010
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-<<<<<<< HEAD
 =======
 Just register a user and login using it's credential.
 
->>>>>>> 28e22618ec09990265dbc40b12fc5d983f2f9010
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
