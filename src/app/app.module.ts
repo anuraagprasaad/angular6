@@ -19,6 +19,7 @@ import { AddUserComponent } from './components/add-user/add-user.component';
 import { UserService } from './services/user.service';
 import { UsersComponent } from './components/users/users.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { UserDetailsComponent } from './components/user-details/user-details.com
     AddUserComponent,
     UsersComponent,
     UserDetailsComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
