@@ -5,11 +5,14 @@
     </a>    
   </div>
   <div class="col-md-6">
+    <div class="btn-group pull-right">      
+      <button (click)="onDeleteClick()" class="btn btn-danger btn-sm"><i class="fa fa-times" aria-hidden="true"></i> Delete</button>
+    </div>
   </div>
 </div>
 <div class="card">
   <div class="card-header bg-dark text-white text-center">
-    Add User
+    User Details
   </div>
   <div class="card-body">
     <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
@@ -100,7 +103,7 @@
               </div>
           </div>     
 
-          <input type="submit" value="Submit" class="btn btn-primary btn-block">
+          <input type="submit" value="Update" class="btn btn-primary btn-block">
     </form>
   </div>
 </div>

@@ -18,6 +18,7 @@ import { AuthService } from './services/auth.service';
 import { AddUserComponent } from './components/add-user/add-user.component';
 import { UserService } from './services/user.service';
 import { UsersComponent } from './components/users/users.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { UsersComponent } from './components/users/users.component';
     LoginComponent,
     RegisterComponent,
     AddUserComponent,
-    UsersComponent
+    UsersComponent,
+    UserDetailsComponent,
   ],
   imports: [
     BrowserModule,
