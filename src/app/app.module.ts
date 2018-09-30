@@ -20,6 +20,9 @@ import { UserService } from './services/user.service';
 import { UsersComponent } from './components/users/users.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { PostsComponent } from './components/posts/posts.component';
+import { PostService } from './services/post.service';
+import { AddPostComponent } from './components/add-post/add-post.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     UsersComponent,
     UserDetailsComponent,
     NotFoundComponent,
+    PostsComponent,
+    AddPostComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     AngularFirestoreModule,
     AngularFireAuthModule
   ],
-  providers: [AuthService, UserService],
+  providers: [AuthService, UserService, PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

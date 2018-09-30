@@ -1,0 +1,107 @@
+<div class="row mb-2">
+  <div class="col-md-6">
+    <a routerLink="/" class="btn btn-info btn-sm">
+      <i class="fa fa-arrow-circle-o-left"></i> Back To Dashboard
+    </a>    
+  </div>
+  <div class="col-md-6">
+  </div>
+</div>
+<div class="card">
+  <div class="card-header bg-dark text-white text-center">
+    Add Post
+  </div>
+  <div class="card-body">
+    <form #postForm="ngForm" (ngSubmit)="onSubmit(postForm)">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input 
+            type="text"
+            class="form-control"
+            name="name"
+            #userName="ngModel"
+            [ngClass]="{'is-invalid':userName.errors && userName.touched}"
+            [(ngModel)]="post.name"
+            minlength="2"
+            required
+        >
+
+        <div [hidden]="!userName.errors?.required" class="invalid-feedback">
+          Name required
+        </div>
+
+        <div [hidden]="!userName.errors?.minlength" class="invalid-feedback">
+            Must be at least 2 characters
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input 
+            type="text"
+            class="form-control"
+            name="email"
+            #userEmail="ngModel"
+            [ngClass]="{'is-invalid':userEmail.errors && userEmail.touched}"
+            [(ngModel)]="post.email"
+            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+            required
+        >
+
+        <div [hidden]="!userEmail.errors?.required" class="invalid-feedback">
+          Email required
+        </div>
+
+        <div [hidden]="!userEmail.errors?.pattern" class="invalid-feedback">
+            Email is not valid
+        </div>
+      </div>
+
+      <div class="form-group">
+          <label for="title">Title</label>
+          <input 
+              type="text"
+              class="form-control"
+              name="title"
+              #postTitle="ngModel"
+              [ngClass]="{'is-invalid':postTitle.errors && postTitle.touched}"
+              [(ngModel)]="post.title"
+              minlength="2"
+              required
+          >
+  
+          <div [hidden]="!postTitle.errors?.required" class="invalid-feedback">
+            Title required
+          </div>
+  
+          <div [hidden]="!postTitle.errors?.minlength" class="invalid-feedback">
+              Must be at least 2 characters
+          </div>
+      </div>
+
+      <div class="form-group">
+        <label for="title">Post</label>
+        <textarea 
+          class="form-control"
+          name="post"
+          #postText="ngModel" 
+          [ngClass]="{'is-invalid':postText.errors && postText.touched}"
+          [(ngModel)]="post.post"
+          required
+          minlength="2"
+        >          
+        </textarea>
+
+        <div [hidden]="!postText.errors?.required" class="invalid-feedback">
+          Post required
+        </div>
+
+        <div [hidden]="!postText.errors?.minlength" class="invalid-feedback">
+            Must be at least 2 characters
+        </div>
+    </div>  
+
+    <input type="submit" value="Submit" class="btn btn-primary btn-block">
+    </form>
+  </div>
+</div>
